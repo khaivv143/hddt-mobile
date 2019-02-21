@@ -33,10 +33,169 @@
             <div class="name-cpn">
                 <label for="">Khách hàng</label>
                 <div>
-                    <span>Công ty CP Softdreams <br> 0100691544</span>
+                    <span data-toggle="modal" data-target="#cr-modal1">Công ty CP Softdreams<font>0100691544</font></span>
                 </div>
             </div>
+
+            <ul class="list-product">
+                <li data-toggle="modal" data-target="#cr-modal2">
+                    <label>Bánh mỳ</label>
+                    <label>12.000.000 VNĐ</label>
+                </li>
+                <li data-toggle="modal" data-target="#cr-modal2">
+                    <label>Bánh mỳ</label>
+                    <label>12.000.000 VNĐ</label>
+                </li>
+            </ul>
+            <ul class="nav">
+                <li><a data-toggle="modal" data-target="#cr-modal2">Thêm mới sản phẩm</a></li>
+                <li><a>Thêm mới sản phẩm từ danh mục</a></li>
+            </ul>
+            <ul class="total">
+                <li>
+                    <label>Tổng tiền dịch vụ</label>
+                    <label>36.000.000</label>
+                </li>
+                <li>
+                    <label>Thuế <font>10%</font></label>
+                    <label>3.600.000</label>
+                </li>
+                <li>
+                    <label>Tổng tiền thanh toán</label>
+                    <label>39.600.000</label>
+                </li>
+            </ul>
+
+            <ul class="info">
+                <li>
+                    <label>Ghi chú</label>
+                </li>
+                <li>
+                    <label>Loại tiền tệ</label>
+                    <label>VNĐ</label>
+                </li>
+                <li>
+                    <label>Tỷ giá</label>
+                    <label>24.600</label>
+                </li>
+                <li>
+                    <label>Ngày phát hành</label>
+                    <label>12/02/2018</label>
+                </li>
+                <li>
+                    <label>Email</label>
+                    <label>thenn@softdreams.vn</label>
+                </li>
+                <li>
+                    <label>SMS</label>
+                    <label>0912 402 576</label>
+                </li>
+            </ul>
+
+            <div class="btn-gr">
+                <button>Save</button>
+                <button>Delete</button>
+            </div>
+
         </section>
+
+
+
+        <!-- List Modal -->
+        <div class="modal fade cr-modal" id="cr-modal1" tabindex="-1" role="dialog" aria-labelledby="cr-modal1Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>
+                                <label>Mã khách hàng</label>
+                                <input type="text" value="90jg8934kd">
+                            </li>
+                            <li>
+                                <label>MST</label>
+                                <input type="text" value="010328907">
+                            </li>
+                            <li>
+                                <label>Tên đơn vị</label>
+                                <input type="text" value="Công ty CP Softdreams">
+                            </li>
+                            <li>
+                                <label>Tên người mua</label>
+                                <input type="text" value="Nguyễn Minh Hiếu">
+                            </li>
+                            <li>
+                                <label>Địa chỉ</label>
+                                <input type="text" value="Số 8 Phạm Hùng, Hà Nội">
+                            </li>
+                        
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-sm btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="modal fade cr-modal" id="cr-modal2" tabindex="-1" role="dialog" aria-labelledby="cr-modal2Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>
+                                <label>Mã sản phẩm</label>
+                                <input type="text" value="90jg8934kd">
+                            </li>
+                            <li>
+                                <label>Tên sản phẩm</label>
+                                <input type="text" value="Bánh mỳ trứng">
+                            </li>
+                            <li>
+                                <label>Giá</label>
+                                <input type="text" value="10.000">
+                            </li>
+                            <li>
+                                <label>Số lượng</label>
+                                <input type="number" value="1">
+                            </li>
+                            <li>
+                                <label>Thuế suất</label>
+                                <input type="text" value="10%">
+                            </li>
+                            <li>
+                                <label>Thành tiền</label>
+                                <input type="text" value="11.000">
+                            </li>
+                            <li>
+                                <label class="vtop">Mô tả</label>
+                                <textarea name="" id="" cols="30" rows="3"></textarea>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-sm btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- -->
+
+
 
         <section class="container-fluid" id="menu-bar">
             <ul>
