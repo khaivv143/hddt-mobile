@@ -49,7 +49,7 @@
             </ul>
             <ul class="nav">
                 <li><a data-toggle="modal" data-target="#cr-modal2">Thêm mới sản phẩm</a></li>
-                <li><a>Thêm mới sản phẩm từ danh mục</a></li>
+                <!--                <li><a>Thêm mới sản phẩm từ danh mục</a></li>-->
             </ul>
             <ul class="total">
                 <li>
@@ -69,26 +69,30 @@
             <ul class="info">
                 <li>
                     <label>Ghi chú</label>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
                 </li>
                 <li>
                     <label>Loại tiền tệ</label>
-                    <label>VNĐ</label>
+                    <select name="" id="">
+                        <option value="">VNĐ</option>
+                        <option value="">USD</option>
+                    </select>
                 </li>
                 <li>
                     <label>Tỷ giá</label>
-                    <label>24.600</label>
+                    <input type="text" value="24.500 VNĐ">
                 </li>
                 <li>
                     <label>Ngày phát hành</label>
-                    <label>12/02/2018</label>
+                    <input type="date" value="2018-01-08">
                 </li>
                 <li>
                     <label>Email</label>
-                    <label>thenn@softdreams.vn</label>
+                    <input type="text" value="thenn@softdreams.vn">
                 </li>
                 <li>
                     <label>SMS</label>
-                    <label>0912 402 576</label>
+                    <input type="text" value="0912 402 576">
                 </li>
             </ul>
 
@@ -98,8 +102,6 @@
             </div>
 
         </section>
-
-
 
         <!-- List Modal -->
         <div class="modal fade cr-modal" id="cr-modal1" tabindex="-1" role="dialog" aria-labelledby="cr-modal1Label" aria-hidden="true">
@@ -132,7 +134,7 @@
                                 <label>Địa chỉ</label>
                                 <input type="text" value="Số 8 Phạm Hùng, Hà Nội">
                             </li>
-                        
+
                         </ul>
                     </div>
                     <div class="modal-footer">
@@ -142,8 +144,8 @@
                 </div>
             </div>
         </div>
-        
-        
+
+
         <div class="modal fade cr-modal" id="cr-modal2" tabindex="-1" role="dialog" aria-labelledby="cr-modal2Label" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -156,11 +158,21 @@
                         <ul>
                             <li>
                                 <label>Mã sản phẩm</label>
-                                <input type="text" value="90jg8934kd">
+                                <input type="text" id="nms2" value="90jg8934kd">
+                                <ul class="result-s nms2">
+                                    <li><a>Bánh mỳ cay</a></li>
+                                    <li><a>Bánh bao</a></li>
+                                    <li><a>Bánh xèo</a></li>
+                                </ul>
                             </li>
                             <li>
                                 <label>Tên sản phẩm</label>
-                                <input type="text" value="Bánh mỳ trứng">
+                                <input type="text" id="nms1" value="Bánh mỳ trứng">
+                                <ul class="result-s nms1">
+                                    <li><a>Bánh mỳ cay</a></li>
+                                    <li><a>Bánh bao</a></li>
+                                    <li><a>Bánh xèo</a></li>
+                                </ul>
                             </li>
                             <li>
                                 <label>Giá</label>
@@ -182,7 +194,7 @@
                                 <label class="vtop">Mô tả</label>
                                 <textarea name="" id="" cols="30" rows="3"></textarea>
                             </li>
-                        
+
                         </ul>
                     </div>
                     <div class="modal-footer">
@@ -245,6 +257,26 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        $("#nms1").keyup(function() {
+            var k = $(this).val();
+            if (k.length > 0) {
+                $('.nms1').css({"opacity":"1","pointer-events": "all"});
+            } else {
+                $('.nms1').css({"opacity":"0","pointer-events": "none"});
+            }
+        });
+        
+        $("#nms2").keyup(function() {
+            var k = $(this).val();
+            if (k.length > 0) {
+                $('.nms2').css({"opacity":"1","pointer-events": "all"});
+            } else {
+                $('.nms2').css({"opacity":"0","pointer-events": "none"});
+            }
+        });
+    </script>
 </body>
 
 </html>
