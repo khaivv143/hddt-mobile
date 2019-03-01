@@ -872,7 +872,7 @@ header {
           outline: none; }
           /* line 1047, hddt-mobile/libs/style.scss */
           #content-create ul.info li input[type="date"] {
-            transform: translateX(35px); }
+            transform: translateX(15px); }
   /* line 1056, hddt-mobile/libs/style.scss */
   #content-create .btn-gr {
     padding: 10px 15px;
