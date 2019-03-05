@@ -930,18 +930,34 @@ header {
         .cr-modal ul li label.vtop {
           vertical-align: top; }
       /* line 1125, hddt-mobile/libs/style.scss */
-      .cr-modal ul li input {
+      .cr-modal ul li .form-group {
         width: calc(100% - 140px);
+        position: relative; }
+        /* line 1128, hddt-mobile/libs/style.scss */
+        .cr-modal ul li .form-group i {
+          position: absolute;
+          left: 0;
+          top: 1px;
+          font-size: 18px; }
+          /* line 1133, hddt-mobile/libs/style.scss */
+          .cr-modal ul li .form-group i.fa-exclamation-circle {
+            color: red; }
+          /* line 1136, hddt-mobile/libs/style.scss */
+          .cr-modal ul li .form-group i.fa-check-square-o {
+            color: forestgreen; }
+      /* line 1142, hddt-mobile/libs/style.scss */
+      .cr-modal ul li input {
+        width: calc(100%);
         border: 0;
         outline: none;
         text-align: right; }
-      /* line 1132, hddt-mobile/libs/style.scss */
+      /* line 1149, hddt-mobile/libs/style.scss */
       .cr-modal ul li textarea {
         width: calc(100% - 140px);
         border: 0;
         outline: none;
         text-align: right; }
-      /* line 1139, hddt-mobile/libs/style.scss */
+      /* line 1156, hddt-mobile/libs/style.scss */
       .cr-modal ul li .result-s {
         position: absolute;
         background: #ccc;
@@ -952,20 +968,21 @@ header {
         opacity: 0;
         pointer-events: none;
         transition: .2s; }
-        /* line 1150, hddt-mobile/libs/style.scss */
+        /* line 1167, hddt-mobile/libs/style.scss */
         .cr-modal ul li .result-s li {
           text-align: right; }
 
-/* line 1158, hddt-mobile/libs/style.scss */
+/* line 1175, hddt-mobile/libs/style.scss */
 li.mst-ip {
   position: relative; }
-  /* line 1160, hddt-mobile/libs/style.scss */
-  li.mst-ip input {
-    padding-right: 40px; }
-  /* line 1163, hddt-mobile/libs/style.scss */
+  /* line 1181, hddt-mobile/libs/style.scss */
+  li.mst-ip .mst-fg {
+    padding-right: 40px;
+    margin-bottom: 0; }
+  /* line 1185, hddt-mobile/libs/style.scss */
   li.mst-ip button {
     position: absolute;
-    top: 50%;
+    top: calc(50% - 5px);
     transform: translateY(-50%);
     right: 15px;
     padding: 0;
@@ -980,14 +997,18 @@ li.mst-ip {
     box-shadow: 0 0 2px 0 #ccc;
     cursor: pointer; }
 
+/* line 1204, hddt-mobile/libs/style.scss */
+.has-error small {
+  display: none !important; }
+
 @media screen and (max-width: 768px) {
-  /* line 1184, hddt-mobile/libs/style.scss */
+  /* line 1210, hddt-mobile/libs/style.scss */
   .wrap {
     height: 100vh; }
-  /* line 1190, hddt-mobile/libs/style.scss */
+  /* line 1216, hddt-mobile/libs/style.scss */
   #frm-login form button {
     position: fixed; }
-  /* line 1196, hddt-mobile/libs/style.scss */
+  /* line 1222, hddt-mobile/libs/style.scss */
   #menu-bar {
     position: fixed;
     bottom: 0; } }

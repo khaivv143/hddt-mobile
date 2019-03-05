@@ -1121,9 +1121,26 @@ header {
                 }
 
             }
+            
+            .form-group{
+                width: calc(100% - 140px);
+                position: relative;
+                i{
+                    position: absolute;
+                    left: 0;
+                    top: 1px;
+                    font-size: 18px;
+                    &.fa-exclamation-circle{
+                        color: red;
+                    }
+                    &.fa-check-square-o{
+                        color: forestgreen;
+                    }
+                }
+            }
 
             input {
-                width: calc(100% - 140px);
+                width: calc(100%);
                 border: 0;
                 outline: none;
                 text-align: right;
@@ -1158,11 +1175,16 @@ header {
 li.mst-ip{
     position: relative;
     input{
+        
+    }
+    
+    .mst-fg{
         padding-right: 40px;
+        margin-bottom: 0;
     }
     button{
         position: absolute;
-        top: 50%;
+        top: calc(50% - 5px);
         transform: translateY(-50%);
         right: 15px;
         padding: 0;
@@ -1177,6 +1199,10 @@ li.mst-ip{
         box-shadow: 0 0 2px 0 #ccc;
         cursor: pointer;
     }
+}
+
+.has-error small{
+    display: none !important;
 }
 
 

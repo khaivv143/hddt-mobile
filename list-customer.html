@@ -181,56 +181,80 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
-                            <ul>
-                                <li>
-                                    <label>Mã khách hàng</label>
-                                    <input type="text" value="90jg8934kd">
-                                </li>
-                                <li class="mst-ip">
-                                    <label>MST</label>
-                                    <input type="text" value="010328907">
-                                    <button>Lấy LD</button>
-                                </li>
-                                <li>
-                                    <label>Tên đơn vị</label>
-                                    <input type="text" value="100.000">
-                                </li>
-                                <li>
-                                    <label>Tên người mua</label>
-                                    <input type="text" value="1">
-                                </li>
-                                <li>
-                                    <label>TK tra cứu</label>
-                                    <input type="text" value="10%">
-                                </li>
-                                <li>
-                                    <label>Địa chỉ</label>
-                                    <input type="text" value="10%">
-                                </li>
-                                <li>
-                                    <label>Email</label>
-                                    <input type="text" value="10%">
-                                </li>
-                                <li>
-                                    <label>CC Email</label>
-                                    <input type="text" value="10%">
-                                </li>
-                                <li>
-                                    <label>Số tài khoản</label>
-                                    <input type="text" value="10%">
-                                </li>
-                                <li>
-                                    <label>Ngân hàng</label>
-                                    <textarea name="" id="" cols="30" rows="2">Ngân hàng thương mại cổ phần</textarea>
-                                </li>
 
-                            </ul>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-sm btn-primary">Save changes</button>
-                        </div>
+                        <form action="" id="form-cre">
+                            <div class="modal-body">
+                                <ul>
+                                    <li>
+                                        <label>Mã khách hàng</label>
+                                        <div class="form-group">
+                                            <input type="text" name="codecustomer">
+                                        </div>
+                                    </li>
+                                    <li class="mst-ip">
+                                        <label>MST</label>
+                                        <div class="form-group mst-fg">
+                                            <input type="text" name="masothue">
+                                        </div>
+                                        <button>Lấy LD</button>
+                                    </li>
+                                    <li>
+                                        <label>Tên đơn vị</label>
+                                        <div class="form-group">
+                                            <input type="text">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label>Tên người mua</label>
+                                        <div class="form-group">
+                                            <input type="text" >
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label>TK tra cứu</label>
+                                        <div class="form-group">
+                                            <input type="text">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label>Địa chỉ</label>
+                                        <div class="form-group">
+                                            <input type="text">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label>Email</label>
+                                        <div class="form-group">
+                                            <input type="text" >
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label>CC Email</label>
+                                        <div class="form-group">
+                                            <input type="text" >
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label>Số tài khoản</label>
+                                        <div class="form-group">
+                                            <input type="text">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label>Ngân hàng</label>
+                                        <div class="form-group">
+                                            <textarea name="" id="" cols="30" rows="2">Ngân hàng thương mại cổ phần</textarea>
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-sm btn-primary">Save changes</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -283,8 +307,45 @@
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css" />
+
+    <script type="text/javascript" src="//oss.maxcdn.com/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            $('#form-cre').bootstrapValidator({
+                feedbackIcons: {
+                    valid: 'fa fa-check-square-o',
+                    invalid: 'fa fa-exclamation-circle',
+                    validating: 'fa fa-refresh'
+                },
+                fields: {
+                    codecustomer: {
+                        validators: {
+                            notEmpty: {
+                                message: ''
+                            }
+                        }
+                    },
+                    masothue: {
+                        validators: {
+                            notEmpty: {
+                                message: ''
+                            }
+                        }
+                    },
+                }
+            });
+        });
+    </script>
 </body>
+
+
 
 </html>
