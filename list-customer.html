@@ -16,19 +16,36 @@
             <ul>
                 <li><a>DANH SÁCH KHÁCH HÀNG</a></li>
             </ul>
-            <div class="search">
-                <form action="">
-                    <input type="text">
-                </form>
-            </div>
-            <a href="#" class="btn-menu-bar"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <a class="btn-filter" data-toggle="modal" data-target="#filterModal"><i class="fa fa-filter" aria-hidden="true"></i></a>
         </header>
+
+        <!-- Modal -->
+        <div class="modal fade" id="filterModal" tabindex="-1" role="dialog" aria-labelledby="filterModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <input type="text" placeholder="Tìm kiếm" class="form-control">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary btn-sm">Search changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section class="container-fluid" id="list-customer">
             <ul>
                 <li data-toggle="modal" data-target="#crp-modal1">
                     <div class="cpn-name">
-                        <p>Công ty TNHH ABC</p>
+                        <p>Công ty TNHH ABC Công ty TNHH ABC</p>
                     </div>
                     <div class="total">
                         54587645890
@@ -53,7 +70,7 @@
                         <p>Sản phẩm 3</p>
                     </div>
                     <div class="total">
-                        60.000.000 VNĐ
+                        54587645890
                     </div>
                     <div class="btn-view-2">
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -64,7 +81,7 @@
                         <p>Sản phẩm 4</p>
                     </div>
                     <div class="total">
-                        60.000.000 VNĐ
+                        54587645890
                     </div>
                     <div class="btn-view-2">
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -75,7 +92,7 @@
                         <p>Sản phẩm 4</p>
                     </div>
                     <div class="total">
-                        60.000.000 VNĐ
+                        54587645890
                     </div>
                     <div class="btn-view-2">
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -86,7 +103,7 @@
                         <p>Sản phẩm 4</p>
                     </div>
                     <div class="total">
-                        60.000.000 VNĐ
+                        54587645890
                     </div>
                     <div class="btn-view-2">
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -97,7 +114,7 @@
                         <p>Sản phẩm 4</p>
                     </div>
                     <div class="total">
-                        60.000.000 VNĐ
+                        54587645890
                     </div>
                     <div class="btn-view-2">
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -108,7 +125,7 @@
                         <p>Sản phẩm 4</p>
                     </div>
                     <div class="total">
-                        60.000.000 VNĐ
+                        54587645890
                     </div>
                     <div class="btn-view-2">
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -119,7 +136,7 @@
                         <p>Sản phẩm 4</p>
                     </div>
                     <div class="total">
-                        60.000.000 VNĐ
+                        54587645890
                     </div>
                     <div class="btn-view-2">
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -130,7 +147,7 @@
                         <p>Sản phẩm 4</p>
                     </div>
                     <div class="total">
-                        60.000.000 VNĐ
+                        54587645890
                     </div>
                     <div class="btn-view-2">
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -141,7 +158,7 @@
                         <p>Sản phẩm 4</p>
                     </div>
                     <div class="total">
-                        60.000.000 VNĐ
+                        54587645890
                     </div>
                     <div class="btn-view-2">
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -152,7 +169,7 @@
                         <p>Sản phẩm 4</p>
                     </div>
                     <div class="total">
-                        60.000.000 VNĐ
+                        54587645890
                     </div>
                     <div class="btn-view-2">
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -163,7 +180,7 @@
                         <p>Sản phẩm 4</p>
                     </div>
                     <div class="total">
-                        60.000.000 VNĐ
+                        54587645890
                     </div>
                     <div class="btn-view-2">
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -207,7 +224,7 @@
                                     <li>
                                         <label>Tên người mua</label>
                                         <div class="form-group">
-                                            <input type="text" >
+                                            <input type="text">
                                         </div>
                                     </li>
                                     <li>
@@ -225,13 +242,13 @@
                                     <li>
                                         <label>Email</label>
                                         <div class="form-group">
-                                            <input type="text" >
+                                            <input type="text">
                                         </div>
                                     </li>
                                     <li>
                                         <label>CC Email</label>
                                         <div class="form-group">
-                                            <input type="text" >
+                                            <input type="text">
                                         </div>
                                     </li>
                                     <li>
@@ -246,7 +263,6 @@
                                             <textarea name="" id="" cols="30" rows="2">Ngân hàng thương mại cổ phần</textarea>
                                         </div>
                                     </li>
-
                                 </ul>
 
                             </div>
