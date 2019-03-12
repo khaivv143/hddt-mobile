@@ -62,7 +62,7 @@
                 <span>01/2019</span>
                 <span>240.000.000 VNĐ</span>
             </div>
-            <ul>
+            <ul class="list-item">
                 <li>
                     <div class="c-checkbox">
                         <input type="checkbox">
@@ -277,15 +277,19 @@
             var status = $(this).attr('rel');
             if(status == 'open'){
                 $(this).attr('rel','close');
+                $(this).find('i').removeClass('fa-pencil').addClass('fa-window-close-o');
                 $('#list-invoice .c-checkbox').css('width','50px');
                 $('#list-invoice .cpn-name').css('width','calc(100% - 150px)');
                 $('#list-invoice  .btn-view').css('width','0');
+                $('.list-item li').addClass("cld");
                 
             }else{
                 $(this).attr('rel','open');
+                $(this).find('i').removeClass('fa-window-close-o').addClass('fa-pencil');
                 $('#list-invoice .c-checkbox').css('width','0');
                 $('#list-invoice .cpn-name').css('width','calc(100% - 140px)');
                 $('#list-invoice  .btn-view').css('width','40px');
+                $('.list-item li').removeClass("cld");
             }
         });
         
@@ -298,6 +302,15 @@
                 $('#menu-bar').css('height','99px');
                 $('#menu-bar-option').css('height','0');
             }
+        });
+
+        
+        $('.cld').on('click', function(){
+           if($(this).find('input:checked').length > 0 ){
+               $(this).find('input').prop('checked', true);
+           }else{
+               $(this).find('input').prop('checked', false);
+           }
         });
         
     </script>

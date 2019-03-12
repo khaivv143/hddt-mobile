@@ -73,6 +73,7 @@ header {
         position: fixed;
         height: 55px;
         padding-top: 10px;
+        z-index: 99999;
 
         ul {
             height: 34px;
@@ -344,15 +345,17 @@ header {
             background: #fff;
             margin-top: 10px;
             border-bottom: 1px solid #eaeaea;
+            position: relative;
 
             .c-checkbox {
                 width: 0;
                 padding-left: 15px;
-                position: relative;
                 display: flex;
                 align-items: center;
                 overflow: hidden;
                 transition: .3s;
+                pointer-events: none;
+
 
                 input {
                     position: absolute;
@@ -459,6 +462,12 @@ header {
                 i {
                     color: #327eb7;
                     font-size: 28px;
+                }
+            }
+
+            &.cld {
+                .c-checkbox {
+                    pointer-events: all;
                 }
             }
         }
@@ -1379,7 +1388,7 @@ li.mst-ip {
 
     button {
         position: absolute;
-        top: calc(50% - 5px);
+        top: calc(50% + 0px);
         transform: translateY(-50%);
         right: 15px;
         padding: 0;
@@ -1400,18 +1409,28 @@ li.mst-ip {
     display: none !important;
 }
 
-.gj-datepicker{
+.gj-datepicker {
     width: 180px !important;
 }
 
-#datepicker{
-        border: 1px solid #ccc !important;
+#datepicker {
+    border: 1px solid #ccc !important;
     padding: 0 10px 0 0 !important;
 }
-.gj-datepicker-bootstrap [role=right-icon] button .gj-icon, .gj-datepicker-bootstrap [role=right-icon] button .material-icons{
-        top: 2px;
+
+.gj-datepicker-bootstrap [role=right-icon] button .gj-icon,
+.gj-datepicker-bootstrap [role=right-icon] button .material-icons {
+    top: 2px;
 }
 
+.modal-body{
+    .form-group{
+        margin-bottom: 0;
+    }
+    label{
+        margin-bottom: 0;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .wrap {
