@@ -394,7 +394,7 @@ header {
             }
 
             .cpn-name {
-                width: calc(100% - 140px);
+                width: calc(100% - 40px);
                 padding-top: 5px;
                 padding-bottom: 5px;
                 transition: .2s;
@@ -413,29 +413,12 @@ header {
 
                     &:last-child {
                         font-size: 12px;
+
+                        font {
+                            color: #f37033;
+                        }
                     }
 
-                }
-            }
-
-            .total {
-                width: 100px;
-                color: #f37033;
-                font-weight: 600;
-                text-align: right;
-                padding-right: 5px;
-                font-size: 15px;
-                padding-top: 5px;
-                padding-bottom: 5px;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-                flex-wrap: wrap;
-
-                font {
-                    display: block;
-                    clear: both;
-                    font-size: 12px;
                 }
             }
 
@@ -1423,11 +1406,12 @@ li.mst-ip {
     top: 2px;
 }
 
-.modal-body{
-    .form-group{
+.modal-body {
+    .form-group {
         margin-bottom: 0;
     }
-    label{
+
+    label {
         margin-bottom: 0;
     }
 }

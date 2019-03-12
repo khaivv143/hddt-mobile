@@ -70,10 +70,21 @@
                     </div>
                     <div class="cpn-name">
                         <p>Công ty CP Softdreams</p>
-                        <p>00043438: 19/01/2019</p>
+                        <p><font>00043438</font> - 19/01/2019 - <font>60.000.000 VNĐ</font></p>
                     </div>
-                    <div class="total">
-                        60.000.000<br> <font>VNĐ</font>
+                    
+                    <div class="btn-view">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="c-checkbox">
+                        <input type="checkbox">
+                        <span></span>
+                    </div>
+                    <div class="cpn-name">
+                        <p>Công ty CP Softdreams</p>
+                        <p><font>00043438</font> - 19/01/2019 - <font>60.000.000 VNĐ</font></p>
                     </div>
                     <div class="btn-view">
                         <i class="fa fa-eye" aria-hidden="true"></i>
@@ -86,10 +97,7 @@
                     </div>
                     <div class="cpn-name">
                         <p>Công ty CP Softdreams</p>
-                        <p>00043438: 19/01/2019</p>
-                    </div>
-                    <div class="total">
-                        60.000.000<br> <font> VNĐ</font>
+                        <p><font>00043438</font> - 19/01/2019 - <font>60.000.000 VNĐ</font></p>
                     </div>
                     <div class="btn-view">
                         <i class="fa fa-eye" aria-hidden="true"></i>
@@ -102,10 +110,7 @@
                     </div>
                     <div class="cpn-name">
                         <p>Công ty CP Softdreams</p>
-                        <p>00043438: 19/01/2019</p>
-                    </div>
-                    <div class="total">
-                        60.000.000<br> <font> VNĐ</font>
+                        <p><font>00043438</font> - 19/01/2019 - <font>60.000.000 VNĐ</font></p>
                     </div>
                     <div class="btn-view">
                         <i class="fa fa-eye" aria-hidden="true"></i>
@@ -118,10 +123,7 @@
                     </div>
                     <div class="cpn-name">
                         <p>Công ty CP Softdreams</p>
-                        <p>00043438: 19/01/2019</p>
-                    </div>
-                    <div class="total">
-                        60.000.000<br><font> VNĐ</font>
+                        <p><font>00043438</font> - 19/01/2019 - <font>60.000.000 VNĐ</font></p>
                     </div>
                     <div class="btn-view">
                         <i class="fa fa-eye" aria-hidden="true"></i>
@@ -134,26 +136,7 @@
                     </div>
                     <div class="cpn-name">
                         <p>Công ty CP Softdreams</p>
-                        <p>00043438: 19/01/2019</p>
-                    </div>
-                    <div class="total">
-                        60.000.000<br><font> VNĐ</font>
-                    </div>
-                    <div class="btn-view">
-                        <i class="fa fa-eye" aria-hidden="true"></i>
-                    </div>
-                </li>
-                <li>
-                    <div class="c-checkbox">
-                        <input type="checkbox">
-                        <span></span>
-                    </div>
-                    <div class="cpn-name">
-                        <p>Công ty CP Softdreams</p>
-                        <p>00043438: 19/01/2019</p>
-                    </div>
-                    <div class="total">
-                        60.000.000<br> <font> VNĐ</font>
+                        <p><font>00043438</font> - 19/01/2019 - <font>60.000.000 VNĐ</font></p>
                     </div>
                     <div class="btn-view">
                         <i class="fa fa-eye" aria-hidden="true"></i>
@@ -166,10 +149,7 @@
                     </div>
                     <div class="cpn-name">
                         <p>Công ty CP Softdreams Công ty CP Softdreams</p>
-                        <p>00043438: 19/01/2019</p>
-                    </div>
-                    <div class="total">
-                        60.000.000<br> <font> VNĐ</font>
+                        <p><font>00043438</font> - 19/01/2019 - <font>60.000.000 VNĐ</font></p>
                     </div>
                     <div class="btn-view">
                         <i class="fa fa-eye" aria-hidden="true"></i>
@@ -182,10 +162,7 @@
                     </div>
                     <div class="cpn-name">
                         <p>Công ty CP Softdreams</p>
-                        <p>00043438: 19/01/2019</p>
-                    </div>
-                    <div class="total">
-                        60.000.000<br> <font> VNĐ</font>
+                        <p><font>00043438</font> - 19/01/2019 - <font>60.000.000 VNĐ</font></p>
                     </div>
                     <div class="btn-view">
                         <i class="fa fa-eye" aria-hidden="true"></i>
@@ -279,7 +256,7 @@
                 $(this).attr('rel','close');
                 $(this).find('i').removeClass('fa-pencil').addClass('fa-window-close-o');
                 $('#list-invoice .c-checkbox').css('width','50px');
-                $('#list-invoice .cpn-name').css('width','calc(100% - 150px)');
+                $('#list-invoice .cpn-name').css('width','calc(100% - 50px)');
                 $('#list-invoice  .btn-view').css('width','0');
                 $('.list-item li').addClass("cld");
                 
@@ -287,8 +264,9 @@
                 $(this).attr('rel','open');
                 $(this).find('i').removeClass('fa-window-close-o').addClass('fa-pencil');
                 $('#list-invoice .c-checkbox').css('width','0');
-                $('#list-invoice .cpn-name').css('width','calc(100% - 140px)');
+                $('#list-invoice .cpn-name').css('width','calc(100% - 40px)');
                 $('#list-invoice  .btn-view').css('width','40px');
+                $('.list-item li').find('input').prop('checked', false);
                 $('.list-item li').removeClass("cld");
             }
         });
