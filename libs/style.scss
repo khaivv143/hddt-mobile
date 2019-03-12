@@ -187,7 +187,7 @@ header {
     &#hd-create {
         position: fixed;
         width: 100%;
-        z-index: 9999;
+        z-index: 99999;
 
         h1 {
             text-align: center;
@@ -882,12 +882,28 @@ header {
         &.fa-plus {
             color: #f37033;
         }
-
-        &.fa-ban {
-            color: #3c3c3c;
-        }
     }
 
+    .fa-floppy-o {
+        color: #d29d00;
+    }
+
+    .fa-ban {
+        color: #ff4140;
+    }
+
+    .fa-eye {
+        color: #237b53;
+    }
+
+    .fa-share-square-o {
+        color: #d29d00;
+    }
+
+}
+
+.mcr {
+    height: 99px !important;
 }
 
 .btn-lcancel {
@@ -973,8 +989,8 @@ header {
 #content-create {
     padding: 0;
     background: #eaeff4;
-    padding-top: 45px;
-    height: calc(100vh - 200px);
+    padding-top: 60px;
+    height: calc(100vh - 99px);
     overflow-y: auto;
 
     a {
@@ -1013,6 +1029,9 @@ header {
         padding: 7px 15px;
         background: #fff;
 
+
+
+
         a {
             width: calc(50% - 5px);
             max-width: 180px;
@@ -1023,26 +1042,39 @@ header {
             font-size: 14px;
             border-radius: 4px;
 
-            select {
-                font-size: 14px;
-                height: 30px;
-                padding: 0 .75rem
+            &:last-child {
+                text-align: right;
+            }
+        }
+
+        select {
+            padding: 2px 5px;
+            border-color: #e2e2e2;
+            border-radius: 4px;
+        }
+
+        &:first-child {
+            border-bottom: 1px solid #f1f1f1;
+            background: #f7fbff;
+
+            a {
+                background: #f7fbff;
             }
         }
     }
 
-    .name-cpn {
-        background: #fff;
-        margin-top: 7px;
-        margin-bottom: 7px;
+    .name-cpn-title {
         display: flex;
         padding: 0 15px;
 
         label {
-            width: 100px;
+            width: 100%;
             display: flex;
             align-items: center;
             margin-bottom: 0;
+            padding: 15px 0 5px 0;
+            font-size: 14px;
+            color: #4e4e4e;
         }
 
         div {
@@ -1072,6 +1104,71 @@ header {
         }
     }
 
+
+    .name-cpn {
+        display: flex;
+        padding: 0 15px 8px;
+        background: #fff;
+
+        label {
+            width: calc(100% - 50px);
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+            padding: 15px 0 5px 0;
+            font-size: 14px;
+
+        }
+
+        a {
+            width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            i {
+                font-size: 22px;
+
+                &.fa-plus-circle {
+                    color: #428bca;
+                }
+
+                &.fa-info-circle {
+                    color: red;
+                }
+            }
+
+
+        }
+
+        div {
+            width: calc(100% - 100px);
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+            span {
+                text-align: right;
+                padding-right: 15px;
+                display: block;
+                position: relative;
+
+                &::before {
+                    content: "\f105";
+                    font-family: fontawesome;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 0;
+                }
+
+                font {
+                    display: block;
+                }
+            }
+        }
+    }
+
+
     ul {
         margin: 0;
         padding: 0;
@@ -1083,18 +1180,17 @@ header {
                 position: relative;
                 display: flex;
                 justify-content: space-between;
-                padding: 5px 15px;
+                padding: 10px 30px 10px 40px;
                 background: #fff;
                 border-bottom: 1px solid #f1f1f1;
+                font-size: 14px;
 
                 label {
                     margin: 0;
 
                     &:first-child {}
 
-                    &:last-child {
-                        padding-right: 15px;
-                    }
+                    &:last-child {}
                 }
 
                 &::before {
@@ -1104,6 +1200,20 @@ header {
                     top: 50%;
                     transform: translateY(-50%);
                     right: 15px;
+                }
+
+                a {
+                    position: absolute;
+                    z-index: 2;
+                    left: 15px;
+                    top: 50%;
+                    transform: translateY(-50%);
+
+                    i {
+                        font-size: 20px;
+                        transform: translateY(0.5px);
+                        color: red;
+                    }
                 }
             }
         }
@@ -1112,36 +1222,43 @@ header {
             li {
                 position: relative;
                 width: 100%;
-                padding: 5px 15px;
+                padding: 10px 15px;
                 background: #fff;
 
                 a {
-                    color: #1862a2;
-                }
+                    color: #428bca;
+                    font-size: 14px;
 
-                &::before {
-                    content: "\f105";
-                    font-family: fontawesome;
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    right: 15px;
+                    i {
+                        font-size: 20px;
+                        transform: translateY(1px);
+                        padding-right: 4px;
+                        color: #428bca;
+
+                    }
                 }
             }
         }
 
         &.total {
-            margin-top: 7px;
 
             li {
                 display: flex;
                 justify-content: space-between;
                 background: #fff;
-                padding: 5px 15px;
+                padding: 10px 15px;
                 border-bottom: 1px solid #f1f1f1;
+                font-size: 14px;
 
                 label {
                     margin: 0;
+
+                    select {
+                        padding: 2px 5px;
+                        border-color: #e2e2e2;
+                        border-radius: 4px;
+                        margin-left: 10px;
+                    }
 
                     font {
                         padding-left: 15px;
@@ -1156,7 +1273,7 @@ header {
 
                 &:last-child {
                     label {
-                        color: #1774c5;
+                        //                        color: #1774c5;
 
                         &:last-child {
                             color: #ff5857;
@@ -1167,13 +1284,13 @@ header {
         }
 
         &.info {
-            margin-top: 7px;
+            font-size: 14px;
 
             li {
                 background: #fff;
                 display: flex;
                 justify-content: space-between;
-                padding: 5px 15px;
+                padding: 10px 15px;
                 border-bottom: 1px solid #f1f1f1;
                 position: relative;
                 overflow: hidden;
@@ -1185,12 +1302,15 @@ header {
 
                 textarea {
                     border: 0;
-                    text-align: right;
+                    width: 100%;
                     outline: none;
                 }
 
                 select {
-                    border: 0;
+                    padding: 2px 5px;
+                    border-color: #e2e2e2;
+                    border-radius: 4px;
+                    margin-left: 10px;
                 }
 
                 input {
@@ -1296,6 +1416,7 @@ header {
         li {
             border-bottom: 1px solid #efefef;
             padding: 5px 15px;
+            display: flex;
 
             label {
                 width: 130px;
@@ -1393,12 +1514,39 @@ li.mst-ip {
 }
 
 .gj-datepicker {
-    width: 180px !important;
+    width: 125px !important;
+}
+
+.gj-icon {
+    font-size: 20px !important;
+    color: #585858;
+}
+
+.gj-datepicker-bootstrap [role=right-icon] button {
+    border: 0;
+    width: 28px;
 }
 
 #datepicker {
-    border: 1px solid #ccc !important;
+    border: 0 !important;
     padding: 0 10px 0 0 !important;
+    font-size: 14px;
+
+    &::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #000 !important;
+        /* Firefox */
+    }
+
+    &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #000 !important;
+    }
+
+    &::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: #000 !important;
+    }
 }
 
 .gj-datepicker-bootstrap [role=right-icon] button .gj-icon,

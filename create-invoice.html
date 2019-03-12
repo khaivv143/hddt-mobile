@@ -14,63 +14,92 @@
 <body>
     <div class="wrap">
         <header class="container-fluid" id="hd-create">
-            <h1>TẠO HÓA ĐƠN</h1>
-            <a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i> DS hóa đơn</a>
+            <h1>TẠO MỚI HÓA ĐƠN</h1>
         </header>
 
         <section class="container-fluid" id="content-create">
-            <a href="#" class="preview">Xem trước</a>
             <div class="group-hd">
                 <a>
-                    Mã số: JDH73H8
+                    Mẫu số
                 </a>
                 <a>
-                    <select name="" id="" class="form-control">
-                        <option value="">Ký hiệu: HDY/U76</option>
-                        <option value="">Ký hiệu: 44g/DSH</option>
+                    JDH73H8
+                </a>
+            </div>
+            <div class="group-hd">
+                <a>
+                    Ký hiệu
+                </a>
+                <a>
+                    <select name="" id="">
+                        <option value="">JDH73H8</option>
+                        <option value="">JDH73H8</option>
                     </select>
                 </a>
             </div>
+            <div class="name-cpn-title">
+                <label for="">KHÁCH HÀNG</label>
+            </div>
+
             <div class="name-cpn">
-                <label for="">Khách hàng</label>
-                <div>
-                    <span data-toggle="modal" data-target="#cr-modal1">Công ty CP Softdreams<font>0100691544</font></span>
-                </div>
+                <label for="">Công ty cổ phần đầu tư công nghệ và thương mại Softdreams <br>  MST: 098745645</label>
+                <a data-toggle="modal" data-target="#cr-modal1">
+<!--                    <i class="fa fa-plus-circle" aria-hidden="true"></i>-->
+                                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="name-cpn-title">
+                <label for="">SẢN PHẨM DỊCH VỤ</label>
             </div>
 
             <ul class="list-product">
-                <li data-toggle="modal" data-target="#cr-modal2">
-                    <label>Bánh mỳ</label>
-                    <label>12.000.000 VNĐ</label>
+
+                <li>
+                    <a href=""><i class="fa fa-minus-circle" aria-hidden="true"></i></a>
+                    <label data-toggle="modal" data-target="#cr-modal2">Bánh mỳ</label>
+                    <label data-toggle="modal" data-target="#cr-modal2">12.000.000</label>
                 </li>
                 <li data-toggle="modal" data-target="#cr-modal2">
-                    <label>Bánh mỳ</label>
-                    <label>12.000.000 VNĐ</label>
+                    <a href=""><i class="fa fa-minus-circle" aria-hidden="true"></i></a>
+                    <label data-toggle="modal" data-target="#cr-modal2">Bánh mỳ</label>
+                    <label data-toggle="modal" data-target="#cr-modal2">12.000.000</label>
                 </li>
             </ul>
             <ul class="nav">
-                <li><a data-toggle="modal" data-target="#cr-modal2">Thêm mới sản phẩm</a></li>
-                <!--                <li><a>Thêm mới sản phẩm từ danh mục</a></li>-->
+                <li><a data-toggle="modal" data-target="#cr-modal2"><i class="fa fa-plus-circle" aria-hidden="true"></i> Thêm mới sản phẩm</a></li>
             </ul>
+
+            <div class="name-cpn-title">
+                <label for="">THANH TOÁN</label>
+            </div>
             <ul class="total">
                 <li>
                     <label>Tổng tiền dịch vụ</label>
                     <label>36.000.000</label>
                 </li>
                 <li>
-                    <label>Thuế <font>10%</font></label>
+                    <label>Thuế
+                        <select name="" id="">
+                            <option value="">5%</option>
+                            <option value="">10%</option>
+                        </select>
+                    </label>
                     <label>3.600.000</label>
                 </li>
                 <li>
-                    <label>Tổng tiền thanh toán</label>
-                    <label>39.600.000</label>
+                    <label>Tổng tiền</label>
+                    <label><strong>39.600.000</strong></label>
                 </li>
             </ul>
 
+            <div class="name-cpn-title">
+                <label for="">THÔNG TIN BỔ SUNG</label>
+            </div>
+
             <ul class="info">
                 <li>
-                    <label>Ghi chú</label>
-                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                    <textarea name="" id="" cols="30" rows="2" placeholder="Ghi chú"></textarea>
                 </li>
                 <li>
                     <label>Loại tiền tệ</label>
@@ -85,7 +114,7 @@
                 </li>
                 <li>
                     <label>Ngày phát hành</label>
-                    <input id="datepicker">
+                    <input id="datepicker" placeholder="20/4/2019">
                 </li>
                 <li>
                     <label>Email</label>
@@ -96,11 +125,6 @@
                     <input type="text" value="0912 402 576">
                 </li>
             </ul>
-
-            <div class="btn-gr">
-                <button>Save</button>
-                <button>Delete</button>
-            </div>
 
         </section>
 
@@ -210,45 +234,32 @@
 
 
 
-        <section class="container-fluid" id="menu-bar">
+        <section class="container-fluid mcr" id="menu-bar-option">
             <ul>
+                <li>
+                    <a href="#">
+                        <div class="atv">
+                            <i class="fa fa-ban" aria-hidden="true"></i>
+                        </div>
+                        <label for="">Hủy bỏ</label>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="atv">
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                        </div>
+                        <label for="">Xem trước</label>
+                    </a>
+                </li>
                 <li>
                     <a href="#" class="active">
                         <div class="atv">
-                            <img src="libs/images/1.svg" alt="">
-                            <img src="libs/images/1.1.svg" alt="">
+                            <i class="fa fa-floppy-o" aria-hidden="true"></i>
                         </div>
-                        <label for="">Hóa đơn</label>
+                        <label for="">Lưu</label>
                     </a>
                 </li>
-                <li>
-                    <a href="#">
-                        <div class="atv">
-                            <img src="libs/images/2.svg" alt="">
-                            <img src="libs/images/2.2.svg" alt="">
-                        </div>
-                        <label for="">Khách hàng</label>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="atv">
-                            <img src="libs/images/3.svg" alt="">
-                            <img src="libs/images/3.1.svg" alt="">
-                        </div>
-                        <label for="">Sản phẩm</label>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="atv">
-                            <img src="libs/images/4.svg" alt="">
-                            <img src="libs/images/4.1.svg" alt="">
-                        </div>
-                        <label for="">Cấu hình</label>
-                    </a>
-                </li>
-
             </ul>
         </section>
 
@@ -264,22 +275,34 @@
         $('#datepicker').datepicker({
             uiLibrary: 'bootstrap4'
         });
-        
+
         $("#nms1").keyup(function() {
             var k = $(this).val();
             if (k.length > 0) {
-                $('.nms1').css({"opacity":"1","pointer-events": "all"});
+                $('.nms1').css({
+                    "opacity": "1",
+                    "pointer-events": "all"
+                });
             } else {
-                $('.nms1').css({"opacity":"0","pointer-events": "none"});
+                $('.nms1').css({
+                    "opacity": "0",
+                    "pointer-events": "none"
+                });
             }
         });
-        
+
         $("#nms2").keyup(function() {
             var k = $(this).val();
             if (k.length > 0) {
-                $('.nms2').css({"opacity":"1","pointer-events": "all"});
+                $('.nms2').css({
+                    "opacity": "1",
+                    "pointer-events": "all"
+                });
             } else {
-                $('.nms2').css({"opacity":"0","pointer-events": "none"});
+                $('.nms2').css({
+                    "opacity": "0",
+                    "pointer-events": "none"
+                });
             }
         });
     </script>
