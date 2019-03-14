@@ -1152,42 +1152,43 @@ header {
     .cr-modal ul li {
       border-bottom: 1px solid #efefef;
       padding: 5px 15px;
-      display: flex; }
-      /* line 1421, hddt-mobile/libs/style.scss */
+      display: flex;
+      flex-wrap: wrap; }
+      /* line 1422, hddt-mobile/libs/style.scss */
       .cr-modal ul li label {
         width: 130px; }
-        /* line 1424, hddt-mobile/libs/style.scss */
+        /* line 1425, hddt-mobile/libs/style.scss */
         .cr-modal ul li label.vtop {
           vertical-align: top; }
-      /* line 1430, hddt-mobile/libs/style.scss */
+      /* line 1431, hddt-mobile/libs/style.scss */
       .cr-modal ul li .form-group {
         width: calc(100% - 140px);
         position: relative; }
-        /* line 1434, hddt-mobile/libs/style.scss */
+        /* line 1435, hddt-mobile/libs/style.scss */
         .cr-modal ul li .form-group i {
           position: absolute;
           left: 0;
           top: 1px;
           font-size: 18px; }
-          /* line 1440, hddt-mobile/libs/style.scss */
+          /* line 1441, hddt-mobile/libs/style.scss */
           .cr-modal ul li .form-group i.fa-exclamation-circle {
             color: red; }
-          /* line 1444, hddt-mobile/libs/style.scss */
+          /* line 1445, hddt-mobile/libs/style.scss */
           .cr-modal ul li .form-group i.fa-check-square-o {
             color: forestgreen; }
-      /* line 1450, hddt-mobile/libs/style.scss */
+      /* line 1451, hddt-mobile/libs/style.scss */
       .cr-modal ul li input {
         width: calc(100%);
         border: 0;
         outline: none;
         text-align: right; }
-      /* line 1457, hddt-mobile/libs/style.scss */
+      /* line 1458, hddt-mobile/libs/style.scss */
       .cr-modal ul li textarea {
         width: calc(100%);
         border: 0;
         outline: none;
         text-align: right; }
-      /* line 1464, hddt-mobile/libs/style.scss */
+      /* line 1465, hddt-mobile/libs/style.scss */
       .cr-modal ul li .result-s {
         position: absolute;
         background: #ccc;
@@ -1198,18 +1199,18 @@ header {
         opacity: 0;
         pointer-events: none;
         transition: .2s; }
-        /* line 1475, hddt-mobile/libs/style.scss */
+        /* line 1476, hddt-mobile/libs/style.scss */
         .cr-modal ul li .result-s li {
           text-align: right; }
 
-/* line 1483, hddt-mobile/libs/style.scss */
+/* line 1484, hddt-mobile/libs/style.scss */
 li.mst-ip {
   position: relative; }
-  /* line 1488, hddt-mobile/libs/style.scss */
+  /* line 1489, hddt-mobile/libs/style.scss */
   li.mst-ip .mst-fg {
     padding-right: 40px;
     margin-bottom: 0; }
-  /* line 1493, hddt-mobile/libs/style.scss */
+  /* line 1494, hddt-mobile/libs/style.scss */
   li.mst-ip button {
     position: absolute;
     top: calc(50% + 0px);
@@ -1227,65 +1228,70 @@ li.mst-ip {
     box-shadow: 0 0 2px 0 #ccc;
     cursor: pointer; }
 
-/* line 1512, hddt-mobile/libs/style.scss */
+/* line 1513, hddt-mobile/libs/style.scss */
 .has-error small {
   display: none !important; }
 
-/* line 1516, hddt-mobile/libs/style.scss */
+/* line 1517, hddt-mobile/libs/style.scss */
 .gj-datepicker {
   width: 125px !important; }
 
-/* line 1520, hddt-mobile/libs/style.scss */
+/* line 1521, hddt-mobile/libs/style.scss */
 .gj-icon {
   font-size: 20px !important;
   color: #585858; }
 
-/* line 1525, hddt-mobile/libs/style.scss */
+/* line 1526, hddt-mobile/libs/style.scss */
 .gj-datepicker-bootstrap [role=right-icon] button {
   border: 0;
   width: 28px; }
 
-/* line 1530, hddt-mobile/libs/style.scss */
+/* line 1531, hddt-mobile/libs/style.scss */
 #datepicker {
   border: 0 !important;
   padding: 0 10px 0 0 !important;
   font-size: 14px; }
-  /* line 1535, hddt-mobile/libs/style.scss */
+  /* line 1536, hddt-mobile/libs/style.scss */
   #datepicker::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #000 !important;
     /* Firefox */ }
-  /* line 1541, hddt-mobile/libs/style.scss */
+  /* line 1542, hddt-mobile/libs/style.scss */
   #datepicker:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: #000 !important; }
-  /* line 1546, hddt-mobile/libs/style.scss */
+  /* line 1547, hddt-mobile/libs/style.scss */
   #datepicker::-ms-input-placeholder {
     /* Microsoft Edge */
     color: #000 !important; }
 
-/* line 1552, hddt-mobile/libs/style.scss */
+/* line 1553, hddt-mobile/libs/style.scss */
 .gj-datepicker-bootstrap [role=right-icon] button .gj-icon,
 .gj-datepicker-bootstrap [role=right-icon] button .material-icons {
   top: 2px; }
 
-/* line 1558, hddt-mobile/libs/style.scss */
+/* line 1559, hddt-mobile/libs/style.scss */
 .modal-body .form-group {
   margin-bottom: 0; }
 
-/* line 1562, hddt-mobile/libs/style.scss */
+/* line 1563, hddt-mobile/libs/style.scss */
 .modal-body label {
   margin-bottom: 0; }
 
+/* line 1568, hddt-mobile/libs/style.scss */
+.modal-body ul li > ul {
+  width: 100%;
+  background: #e4e4e4; }
+
 @media screen and (max-width: 768px) {
-  /* line 1568, hddt-mobile/libs/style.scss */
+  /* line 1577, hddt-mobile/libs/style.scss */
   .wrap {
     height: 100vh; }
-  /* line 1572, hddt-mobile/libs/style.scss */
+  /* line 1581, hddt-mobile/libs/style.scss */
   #menu-bar {
     position: fixed;
     bottom: 0; }
-  /* line 1577, hddt-mobile/libs/style.scss */
+  /* line 1586, hddt-mobile/libs/style.scss */
   #menu-bar-option {
     position: fixed;
     bottom: 0; } }

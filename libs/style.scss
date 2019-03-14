@@ -1417,6 +1417,7 @@ header {
             border-bottom: 1px solid #efefef;
             padding: 5px 15px;
             display: flex;
+            flex-wrap: wrap;
 
             label {
                 width: 130px;
@@ -1561,6 +1562,14 @@ li.mst-ip {
 
     label {
         margin-bottom: 0;
+    }
+    ul{
+        li{
+            &>ul{
+                width: 100%;
+                background: #e4e4e4;
+            }
+        }
     }
 }
 
