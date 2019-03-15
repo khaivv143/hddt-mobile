@@ -309,7 +309,7 @@ header {
 
 #list-invoice {
     background: #fff;
-    height: calc(100vh - 145px);
+    height: calc(100vh - 99px);
     padding: 0;
     padding-top: 55px;
     overflow: auto;
@@ -459,7 +459,7 @@ header {
 
 #list-product {
     background: #fff;
-    height: calc(100vh - 145px);
+    height: calc(100vh - 99px);
     padding: 0;
     padding-top: 55px;
     overflow: auto;
@@ -539,7 +539,7 @@ header {
 
 #list-customer {
     background: #fff;
-    height: calc(100vh - 145px);
+    height: calc(100vh - 99px);
     padding: 0;
     padding-top: 55px;
     overflow: auto;
@@ -677,7 +677,6 @@ header {
         }
 
         .frm-row-capcha {
-            background: #1b649b;
             color: #fff;
             height: 40px;
             line-height: 40px;
@@ -701,7 +700,7 @@ header {
 #setting {
     background: #eaeff4;
     padding: 0;
-    height: calc(100vh - 135px);
+    height: calc(100vh - 99px);
     overflow: scroll;
     padding-top: 55px;
 
@@ -893,7 +892,7 @@ header {
     }
 
     .fa-eye {
-        color: #237b53;
+        color: #428bca;
     }
 
     .fa-share-square-o {
@@ -903,7 +902,7 @@ header {
 }
 
 .mcr {
-    height: 99px !important;
+    height: 75px !important;
 }
 
 .btn-lcancel {
@@ -990,7 +989,7 @@ header {
     padding: 0;
     background: #eaeff4;
     padding-top: 60px;
-    height: calc(100vh - 99px);
+    height: calc(100vh - 75px);
     overflow-y: auto;
 
     a {
@@ -1042,6 +1041,13 @@ header {
             font-size: 14px;
             border-radius: 4px;
 
+            &.dropdown-toggle {
+                width: 100%;
+                color: #000;
+                line-height: 17px;
+
+            }
+
             &:last-child {
                 text-align: right;
             }
@@ -1060,6 +1066,10 @@ header {
             a {
                 background: #f7fbff;
             }
+        }
+
+        .btn-secondary {
+            border-color: #b7b7b7;
         }
     }
 
@@ -1134,7 +1144,7 @@ header {
                 }
 
                 &.fa-info-circle {
-                    color: red;
+                    color: #428bca;
                 }
             }
 
@@ -1173,6 +1183,8 @@ header {
         margin: 0;
         padding: 0;
         list-style: none;
+
+
 
         &.list-product {
 
@@ -1281,6 +1293,20 @@ header {
                     }
                 }
             }
+
+            .btn-secondary {
+                background: #fff;
+                height: 30px;
+                line-height: 15px;
+                color: #000;
+                font-size: 14px;
+            }
+
+            .dropdown {
+                float: right;
+                padding-left: 10px;
+                height: 30px;
+            }
         }
 
         &.info {
@@ -1293,7 +1319,6 @@ header {
                 padding: 10px 15px;
                 border-bottom: 1px solid #f1f1f1;
                 position: relative;
-                overflow: hidden;
 
 
                 label {
@@ -1321,6 +1346,14 @@ header {
                     &[type="date"] {
                         transform: translateX(15px);
                     }
+                }
+
+                .btn-secondary {
+                    background: #fff;
+                    color: #000;
+                    font-size: 14px;
+                    height: 30px;
+                    line-height: 15px;
                 }
 
             }
@@ -1563,14 +1596,19 @@ li.mst-ip {
     label {
         margin-bottom: 0;
     }
-    ul{
-        li{
-            &>ul{
+
+    ul {
+        li {
+            & > ul {
                 width: 100%;
                 background: #e4e4e4;
             }
         }
     }
+}
+
+.dropdown-item {
+    font-size: 14px;
 }
 
 @media screen and (max-width: 768px) {

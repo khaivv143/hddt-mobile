@@ -266,7 +266,7 @@ header {
 /* line 310, hddt-mobile/libs/style.scss */
 #list-invoice {
   background: #fff;
-  height: calc(100vh - 145px);
+  height: calc(100vh - 99px);
   padding: 0;
   padding-top: 55px;
   overflow: auto; }
@@ -389,7 +389,7 @@ header {
 /* line 460, hddt-mobile/libs/style.scss */
 #list-product {
   background: #fff;
-  height: calc(100vh - 145px);
+  height: calc(100vh - 99px);
   padding: 0;
   padding-top: 55px;
   overflow: auto; }
@@ -458,7 +458,7 @@ header {
 /* line 540, hddt-mobile/libs/style.scss */
 #list-customer {
   background: #fff;
-  height: calc(100vh - 145px);
+  height: calc(100vh - 99px);
   padding: 0;
   padding-top: 55px;
   overflow: auto; }
@@ -573,13 +573,12 @@ header {
         font-size: 12px; }
     /* line 679, hddt-mobile/libs/style.scss */
     #frm-login form .frm-row-capcha {
-      background: #1b649b;
       color: #fff;
       height: 40px;
       line-height: 40px;
       text-align: center;
       margin-top: 10px; }
-    /* line 688, hddt-mobile/libs/style.scss */
+    /* line 687, hddt-mobile/libs/style.scss */
     #frm-login form button {
       text-transform: uppercase;
       background: #f26321;
@@ -590,23 +589,23 @@ header {
       cursor: pointer;
       border-radius: 5px; }
 
-/* line 701, hddt-mobile/libs/style.scss */
+/* line 700, hddt-mobile/libs/style.scss */
 #setting {
   background: #eaeff4;
   padding: 0;
-  height: calc(100vh - 135px);
+  height: calc(100vh - 99px);
   overflow: scroll;
   padding-top: 55px; }
-  /* line 708, hddt-mobile/libs/style.scss */
+  /* line 707, hddt-mobile/libs/style.scss */
   #setting ul {
     margin: 0;
     padding: 0;
     list-style: none;
     margin-bottom: 10px; }
-    /* line 714, hddt-mobile/libs/style.scss */
+    /* line 713, hddt-mobile/libs/style.scss */
     #setting ul:last-child {
       margin-bottom: 0; }
-    /* line 721, hddt-mobile/libs/style.scss */
+    /* line 720, hddt-mobile/libs/style.scss */
     #setting ul li a {
       display: block;
       padding: 10px 0;
@@ -616,7 +615,7 @@ header {
       padding-left: 15px;
       position: relative;
       box-shadow: 0 0 1px 0px #d8d8d8; }
-      /* line 731, hddt-mobile/libs/style.scss */
+      /* line 730, hddt-mobile/libs/style.scss */
       #setting ul li a::before {
         content: "\f054";
         font-family: fontawesome;
@@ -627,13 +626,13 @@ header {
         color: #9ac1e3;
         font-size: 12px; }
 
-/* line 747, hddt-mobile/libs/style.scss */
+/* line 746, hddt-mobile/libs/style.scss */
 #menu-bar {
   background: #428bca;
   height: 99px;
   position: relative;
   transition: .3s; }
-  /* line 753, hddt-mobile/libs/style.scss */
+  /* line 752, hddt-mobile/libs/style.scss */
   #menu-bar ul {
     margin: 0;
     padding: 0;
@@ -641,11 +640,11 @@ header {
     display: flex;
     justify-content: space-between;
     list-style: none; }
-    /* line 763, hddt-mobile/libs/style.scss */
+    /* line 762, hddt-mobile/libs/style.scss */
     #menu-bar ul li a {
       color: #fff;
       text-decoration: none; }
-      /* line 767, hddt-mobile/libs/style.scss */
+      /* line 766, hddt-mobile/libs/style.scss */
       #menu-bar ul li a .atv {
         margin: 0 auto;
         background: #fff;
@@ -655,34 +654,34 @@ header {
         justify-content: center;
         align-items: center;
         border-radius: 50%; }
-        /* line 777, hddt-mobile/libs/style.scss */
+        /* line 776, hddt-mobile/libs/style.scss */
         #menu-bar ul li a .atv img {
           width: 35px; }
-          /* line 780, hddt-mobile/libs/style.scss */
+          /* line 779, hddt-mobile/libs/style.scss */
           #menu-bar ul li a .atv img:last-child {
             display: none; }
-      /* line 786, hddt-mobile/libs/style.scss */
+      /* line 785, hddt-mobile/libs/style.scss */
       #menu-bar ul li a label {
         font-size: 14px;
         font-weight: 600;
         display: block;
         text-align: center;
         margin-top: 5px; }
-      /* line 796, hddt-mobile/libs/style.scss */
+      /* line 795, hddt-mobile/libs/style.scss */
       #menu-bar ul li a.active .atv img {
         display: none; }
-        /* line 799, hddt-mobile/libs/style.scss */
+        /* line 798, hddt-mobile/libs/style.scss */
         #menu-bar ul li a.active .atv img:last-child {
           display: block; }
 
-/* line 813, hddt-mobile/libs/style.scss */
+/* line 812, hddt-mobile/libs/style.scss */
 #menu-bar-option {
   background: #428bca;
   position: relative;
   height: 0;
   overflow: hidden;
   transition: .3s; }
-  /* line 820, hddt-mobile/libs/style.scss */
+  /* line 819, hddt-mobile/libs/style.scss */
   #menu-bar-option ul {
     margin: 0;
     padding: 0;
@@ -690,11 +689,11 @@ header {
     display: flex;
     justify-content: space-between;
     list-style: none; }
-    /* line 830, hddt-mobile/libs/style.scss */
+    /* line 829, hddt-mobile/libs/style.scss */
     #menu-bar-option ul li a {
       color: #fff;
       text-decoration: none; }
-      /* line 834, hddt-mobile/libs/style.scss */
+      /* line 833, hddt-mobile/libs/style.scss */
       #menu-bar-option ul li a .atv {
         margin: 0 auto;
         background: #fff;
@@ -704,50 +703,50 @@ header {
         justify-content: center;
         align-items: center;
         border-radius: 50%; }
-        /* line 844, hddt-mobile/libs/style.scss */
+        /* line 843, hddt-mobile/libs/style.scss */
         #menu-bar-option ul li a .atv img {
           width: 35px; }
-          /* line 847, hddt-mobile/libs/style.scss */
+          /* line 846, hddt-mobile/libs/style.scss */
           #menu-bar-option ul li a .atv img:last-child {
             display: none; }
-      /* line 853, hddt-mobile/libs/style.scss */
+      /* line 852, hddt-mobile/libs/style.scss */
       #menu-bar-option ul li a label {
         font-size: 14px;
         font-weight: 600;
         display: block;
         text-align: center;
         margin-top: 5px; }
-      /* line 863, hddt-mobile/libs/style.scss */
+      /* line 862, hddt-mobile/libs/style.scss */
       #menu-bar-option ul li a.active .atv img {
         display: none; }
-        /* line 866, hddt-mobile/libs/style.scss */
+        /* line 865, hddt-mobile/libs/style.scss */
         #menu-bar-option ul li a.active .atv img:last-child {
           display: block; }
-  /* line 878, hddt-mobile/libs/style.scss */
+  /* line 877, hddt-mobile/libs/style.scss */
   #menu-bar-option i {
     color: #000;
     font-size: 28px; }
-    /* line 882, hddt-mobile/libs/style.scss */
+    /* line 881, hddt-mobile/libs/style.scss */
     #menu-bar-option i.fa-plus {
       color: #f37033; }
-  /* line 887, hddt-mobile/libs/style.scss */
+  /* line 886, hddt-mobile/libs/style.scss */
   #menu-bar-option .fa-floppy-o {
     color: #d29d00; }
-  /* line 891, hddt-mobile/libs/style.scss */
+  /* line 890, hddt-mobile/libs/style.scss */
   #menu-bar-option .fa-ban {
     color: #ff4140; }
-  /* line 895, hddt-mobile/libs/style.scss */
+  /* line 894, hddt-mobile/libs/style.scss */
   #menu-bar-option .fa-eye {
-    color: #237b53; }
-  /* line 899, hddt-mobile/libs/style.scss */
+    color: #428bca; }
+  /* line 898, hddt-mobile/libs/style.scss */
   #menu-bar-option .fa-share-square-o {
     color: #d29d00; }
 
-/* line 905, hddt-mobile/libs/style.scss */
+/* line 904, hddt-mobile/libs/style.scss */
 .mcr {
-  height: 99px !important; }
+  height: 75px !important; }
 
-/* line 909, hddt-mobile/libs/style.scss */
+/* line 908, hddt-mobile/libs/style.scss */
 .btn-lcancel {
   background: #ff4140;
   position: absolute;
@@ -760,7 +759,7 @@ header {
   box-shadow: 0 0 3px 0px #4c4c4c;
   border-radius: 3px; }
 
-/* line 922, hddt-mobile/libs/style.scss */
+/* line 921, hddt-mobile/libs/style.scss */
 .btn-lapproved {
   background: #229e04;
   position: absolute;
@@ -773,7 +772,7 @@ header {
   box-shadow: 0 0 3px 0px #4c4c4c;
   border-radius: 3px; }
 
-/* line 935, hddt-mobile/libs/style.scss */
+/* line 934, hddt-mobile/libs/style.scss */
 #add {
   display: flex;
   justify-content: center;
@@ -782,11 +781,11 @@ header {
   bottom: 100px;
   right: 5px;
   z-index: 9999; }
-  /* line 945, hddt-mobile/libs/style.scss */
+  /* line 944, hddt-mobile/libs/style.scss */
   #add img {
     height: 70px; }
 
-/* line 950, hddt-mobile/libs/style.scss */
+/* line 949, hddt-mobile/libs/style.scss */
 .loadmore {
   width: calc(100% - 20px);
   height: 32px;
@@ -800,37 +799,37 @@ header {
   margin-top: 15px;
   box-shadow: 0 0 2px 0px #e8e8e8;
   color: #fff !important; }
-  /* line 964, hddt-mobile/libs/style.scss */
+  /* line 963, hddt-mobile/libs/style.scss */
   .loadmore span {
     font-size: 14px; }
-  /* line 968, hddt-mobile/libs/style.scss */
+  /* line 967, hddt-mobile/libs/style.scss */
   .loadmore img {
     width: 60px;
     display: none; }
-  /* line 973, hddt-mobile/libs/style.scss */
+  /* line 972, hddt-mobile/libs/style.scss */
   .loadmore.loading {
     box-shadow: 0 0 0 0 #fff;
     border: 0;
     background: transparent; }
-    /* line 978, hddt-mobile/libs/style.scss */
+    /* line 977, hddt-mobile/libs/style.scss */
     .loadmore.loading span {
       display: none; }
-    /* line 982, hddt-mobile/libs/style.scss */
+    /* line 981, hddt-mobile/libs/style.scss */
     .loadmore.loading img {
       display: block;
       margin: 0 auto; }
 
-/* line 989, hddt-mobile/libs/style.scss */
+/* line 988, hddt-mobile/libs/style.scss */
 #content-create {
   padding: 0;
   background: #eaeff4;
   padding-top: 60px;
-  height: calc(100vh - 99px);
+  height: calc(100vh - 75px);
   overflow-y: auto; }
-  /* line 996, hddt-mobile/libs/style.scss */
+  /* line 995, hddt-mobile/libs/style.scss */
   #content-create a {
     text-decoration: none; }
-    /* line 999, hddt-mobile/libs/style.scss */
+    /* line 998, hddt-mobile/libs/style.scss */
     #content-create a.preview {
       color: #478ecb;
       width: 100%;
@@ -843,7 +842,7 @@ header {
       font-weight: 600;
       font-size: 14px;
       border-bottom: 1px solid #f1f1f1; }
-      /* line 1012, hddt-mobile/libs/style.scss */
+      /* line 1011, hddt-mobile/libs/style.scss */
       #content-create a.preview::before {
         content: "\f105";
         font-family: fontawesome;
@@ -852,13 +851,13 @@ header {
         right: 15px;
         top: 50%;
         transform: translateY(-50%); }
-  /* line 1026, hddt-mobile/libs/style.scss */
+  /* line 1025, hddt-mobile/libs/style.scss */
   #content-create .group-hd {
     display: flex;
     justify-content: space-between;
     padding: 7px 15px;
     background: #fff; }
-    /* line 1035, hddt-mobile/libs/style.scss */
+    /* line 1034, hddt-mobile/libs/style.scss */
     #content-create .group-hd a {
       width: calc(50% - 5px);
       max-width: 180px;
@@ -868,26 +867,34 @@ header {
       background: #fff;
       font-size: 14px;
       border-radius: 4px; }
-      /* line 1045, hddt-mobile/libs/style.scss */
+      /* line 1044, hddt-mobile/libs/style.scss */
+      #content-create .group-hd a.dropdown-toggle {
+        width: 100%;
+        color: #000;
+        line-height: 17px; }
+      /* line 1051, hddt-mobile/libs/style.scss */
       #content-create .group-hd a:last-child {
         text-align: right; }
-    /* line 1050, hddt-mobile/libs/style.scss */
+    /* line 1056, hddt-mobile/libs/style.scss */
     #content-create .group-hd select {
       padding: 2px 5px;
       border-color: #e2e2e2;
       border-radius: 4px; }
-    /* line 1056, hddt-mobile/libs/style.scss */
+    /* line 1062, hddt-mobile/libs/style.scss */
     #content-create .group-hd:first-child {
       border-bottom: 1px solid #f1f1f1;
       background: #f7fbff; }
-      /* line 1060, hddt-mobile/libs/style.scss */
+      /* line 1066, hddt-mobile/libs/style.scss */
       #content-create .group-hd:first-child a {
         background: #f7fbff; }
-  /* line 1066, hddt-mobile/libs/style.scss */
+    /* line 1071, hddt-mobile/libs/style.scss */
+    #content-create .group-hd .btn-secondary {
+      border-color: #b7b7b7; }
+  /* line 1076, hddt-mobile/libs/style.scss */
   #content-create .name-cpn-title {
     display: flex;
     padding: 0 15px; }
-    /* line 1070, hddt-mobile/libs/style.scss */
+    /* line 1080, hddt-mobile/libs/style.scss */
     #content-create .name-cpn-title label {
       width: 100%;
       display: flex;
@@ -896,18 +903,18 @@ header {
       padding: 15px 0 5px 0;
       font-size: 14px;
       color: #4e4e4e; }
-    /* line 1080, hddt-mobile/libs/style.scss */
+    /* line 1090, hddt-mobile/libs/style.scss */
     #content-create .name-cpn-title div {
       width: calc(100% - 100px);
       padding-top: 5px;
       padding-bottom: 5px; }
-      /* line 1085, hddt-mobile/libs/style.scss */
+      /* line 1095, hddt-mobile/libs/style.scss */
       #content-create .name-cpn-title div span {
         text-align: right;
         padding-right: 15px;
         display: block;
         position: relative; }
-        /* line 1091, hddt-mobile/libs/style.scss */
+        /* line 1101, hddt-mobile/libs/style.scss */
         #content-create .name-cpn-title div span::before {
           content: "\f105";
           font-family: fontawesome;
@@ -915,15 +922,15 @@ header {
           top: 50%;
           transform: translateY(-50%);
           right: 0; }
-        /* line 1100, hddt-mobile/libs/style.scss */
+        /* line 1110, hddt-mobile/libs/style.scss */
         #content-create .name-cpn-title div span font {
           display: block; }
-  /* line 1108, hddt-mobile/libs/style.scss */
+  /* line 1118, hddt-mobile/libs/style.scss */
   #content-create .name-cpn {
     display: flex;
     padding: 0 15px 8px;
     background: #fff; }
-    /* line 1113, hddt-mobile/libs/style.scss */
+    /* line 1123, hddt-mobile/libs/style.scss */
     #content-create .name-cpn label {
       width: calc(100% - 50px);
       display: flex;
@@ -931,33 +938,33 @@ header {
       margin-bottom: 0;
       padding: 15px 0 5px 0;
       font-size: 14px; }
-    /* line 1123, hddt-mobile/libs/style.scss */
+    /* line 1133, hddt-mobile/libs/style.scss */
     #content-create .name-cpn a {
       width: 50px;
       display: flex;
       align-items: center;
       justify-content: flex-end; }
-      /* line 1129, hddt-mobile/libs/style.scss */
+      /* line 1139, hddt-mobile/libs/style.scss */
       #content-create .name-cpn a i {
         font-size: 22px; }
-        /* line 1132, hddt-mobile/libs/style.scss */
+        /* line 1142, hddt-mobile/libs/style.scss */
         #content-create .name-cpn a i.fa-plus-circle {
           color: #428bca; }
-        /* line 1136, hddt-mobile/libs/style.scss */
+        /* line 1146, hddt-mobile/libs/style.scss */
         #content-create .name-cpn a i.fa-info-circle {
-          color: red; }
-    /* line 1144, hddt-mobile/libs/style.scss */
+          color: #428bca; }
+    /* line 1154, hddt-mobile/libs/style.scss */
     #content-create .name-cpn div {
       width: calc(100% - 100px);
       padding-top: 5px;
       padding-bottom: 5px; }
-      /* line 1149, hddt-mobile/libs/style.scss */
+      /* line 1159, hddt-mobile/libs/style.scss */
       #content-create .name-cpn div span {
         text-align: right;
         padding-right: 15px;
         display: block;
         position: relative; }
-        /* line 1155, hddt-mobile/libs/style.scss */
+        /* line 1165, hddt-mobile/libs/style.scss */
         #content-create .name-cpn div span::before {
           content: "\f105";
           font-family: fontawesome;
@@ -965,15 +972,15 @@ header {
           top: 50%;
           transform: translateY(-50%);
           right: 0; }
-        /* line 1164, hddt-mobile/libs/style.scss */
+        /* line 1174, hddt-mobile/libs/style.scss */
         #content-create .name-cpn div span font {
           display: block; }
-  /* line 1172, hddt-mobile/libs/style.scss */
+  /* line 1182, hddt-mobile/libs/style.scss */
   #content-create ul {
     margin: 0;
     padding: 0;
     list-style: none; }
-    /* line 1179, hddt-mobile/libs/style.scss */
+    /* line 1191, hddt-mobile/libs/style.scss */
     #content-create ul.list-product li {
       position: relative;
       display: flex;
@@ -982,10 +989,10 @@ header {
       background: #fff;
       border-bottom: 1px solid #f1f1f1;
       font-size: 14px; }
-      /* line 1188, hddt-mobile/libs/style.scss */
+      /* line 1200, hddt-mobile/libs/style.scss */
       #content-create ul.list-product li label {
         margin: 0; }
-      /* line 1196, hddt-mobile/libs/style.scss */
+      /* line 1208, hddt-mobile/libs/style.scss */
       #content-create ul.list-product li::before {
         content: "\f105";
         font-family: fontawesome;
@@ -993,35 +1000,35 @@ header {
         top: 50%;
         transform: translateY(-50%);
         right: 15px; }
-      /* line 1205, hddt-mobile/libs/style.scss */
+      /* line 1217, hddt-mobile/libs/style.scss */
       #content-create ul.list-product li a {
         position: absolute;
         z-index: 2;
         left: 15px;
         top: 50%;
         transform: translateY(-50%); }
-        /* line 1212, hddt-mobile/libs/style.scss */
+        /* line 1224, hddt-mobile/libs/style.scss */
         #content-create ul.list-product li a i {
           font-size: 20px;
           transform: translateY(0.5px);
           color: red; }
-    /* line 1222, hddt-mobile/libs/style.scss */
+    /* line 1234, hddt-mobile/libs/style.scss */
     #content-create ul.nav li {
       position: relative;
       width: 100%;
       padding: 10px 15px;
       background: #fff; }
-      /* line 1228, hddt-mobile/libs/style.scss */
+      /* line 1240, hddt-mobile/libs/style.scss */
       #content-create ul.nav li a {
         color: #428bca;
         font-size: 14px; }
-        /* line 1232, hddt-mobile/libs/style.scss */
+        /* line 1244, hddt-mobile/libs/style.scss */
         #content-create ul.nav li a i {
           font-size: 20px;
           transform: translateY(1px);
           padding-right: 4px;
           color: #428bca; }
-    /* line 1245, hddt-mobile/libs/style.scss */
+    /* line 1257, hddt-mobile/libs/style.scss */
     #content-create ul.total li {
       display: flex;
       justify-content: space-between;
@@ -1029,66 +1036,84 @@ header {
       padding: 10px 15px;
       border-bottom: 1px solid #f1f1f1;
       font-size: 14px; }
-      /* line 1253, hddt-mobile/libs/style.scss */
+      /* line 1265, hddt-mobile/libs/style.scss */
       #content-create ul.total li label {
         margin: 0; }
-        /* line 1256, hddt-mobile/libs/style.scss */
+        /* line 1268, hddt-mobile/libs/style.scss */
         #content-create ul.total li label select {
           padding: 2px 5px;
           border-color: #e2e2e2;
           border-radius: 4px;
           margin-left: 10px; }
-        /* line 1263, hddt-mobile/libs/style.scss */
+        /* line 1275, hddt-mobile/libs/style.scss */
         #content-create ul.total li label font {
           padding-left: 15px; }
-        /* line 1269, hddt-mobile/libs/style.scss */
+        /* line 1281, hddt-mobile/libs/style.scss */
         #content-create ul.total li label:last-child {
           color: #f47940; }
-      /* line 1278, hddt-mobile/libs/style.scss */
+      /* line 1290, hddt-mobile/libs/style.scss */
       #content-create ul.total li:last-child label:last-child {
         color: #ff5857; }
-    /* line 1286, hddt-mobile/libs/style.scss */
+    /* line 1297, hddt-mobile/libs/style.scss */
+    #content-create ul.total .btn-secondary {
+      background: #fff;
+      height: 30px;
+      line-height: 15px;
+      color: #000;
+      font-size: 14px; }
+    /* line 1305, hddt-mobile/libs/style.scss */
+    #content-create ul.total .dropdown {
+      float: right;
+      padding-left: 10px;
+      height: 30px; }
+    /* line 1312, hddt-mobile/libs/style.scss */
     #content-create ul.info {
       font-size: 14px; }
-      /* line 1289, hddt-mobile/libs/style.scss */
+      /* line 1315, hddt-mobile/libs/style.scss */
       #content-create ul.info li {
         background: #fff;
         display: flex;
         justify-content: space-between;
         padding: 10px 15px;
         border-bottom: 1px solid #f1f1f1;
-        position: relative;
-        overflow: hidden; }
-        /* line 1299, hddt-mobile/libs/style.scss */
+        position: relative; }
+        /* line 1324, hddt-mobile/libs/style.scss */
         #content-create ul.info li label {
           margin: 0; }
-        /* line 1303, hddt-mobile/libs/style.scss */
+        /* line 1328, hddt-mobile/libs/style.scss */
         #content-create ul.info li textarea {
           border: 0;
           width: 100%;
           outline: none; }
-        /* line 1309, hddt-mobile/libs/style.scss */
+        /* line 1334, hddt-mobile/libs/style.scss */
         #content-create ul.info li select {
           padding: 2px 5px;
           border-color: #e2e2e2;
           border-radius: 4px;
           margin-left: 10px; }
-        /* line 1316, hddt-mobile/libs/style.scss */
+        /* line 1341, hddt-mobile/libs/style.scss */
         #content-create ul.info li input {
           text-align: right;
           border: 0;
           outline: none; }
-          /* line 1321, hddt-mobile/libs/style.scss */
+          /* line 1346, hddt-mobile/libs/style.scss */
           #content-create ul.info li input[type="date"] {
             transform: translateX(15px); }
-  /* line 1330, hddt-mobile/libs/style.scss */
+        /* line 1351, hddt-mobile/libs/style.scss */
+        #content-create ul.info li .btn-secondary {
+          background: #fff;
+          color: #000;
+          font-size: 14px;
+          height: 30px;
+          line-height: 15px; }
+  /* line 1363, hddt-mobile/libs/style.scss */
   #content-create .btn-gr {
     padding: 10px 15px;
     position: fixed;
     bottom: 100px;
     width: 100%;
     background: #eaeff4; }
-    /* line 1337, hddt-mobile/libs/style.scss */
+    /* line 1370, hddt-mobile/libs/style.scss */
     #content-create .btn-gr button {
       border: 0;
       height: 35px;
@@ -1096,99 +1121,99 @@ header {
       color: #fff;
       font-size: 14px;
       box-shadow: 0 0 2px 0 #444; }
-      /* line 1345, hddt-mobile/libs/style.scss */
+      /* line 1378, hddt-mobile/libs/style.scss */
       #content-create .btn-gr button:first-child {
         background: #43b83a;
         display: block;
         width: 100%;
         margin-bottom: 10px; }
-      /* line 1352, hddt-mobile/libs/style.scss */
+      /* line 1385, hddt-mobile/libs/style.scss */
       #content-create .btn-gr button:last-child {
         background: #ff4140;
         display: block;
         width: 100%; }
 
-/* line 1364, hddt-mobile/libs/style.scss */
+/* line 1397, hddt-mobile/libs/style.scss */
 #filterModal {
   top: 50px;
   font-size: 14px; }
-  /* line 1369, hddt-mobile/libs/style.scss */
+  /* line 1402, hddt-mobile/libs/style.scss */
   #filterModal .modal-header {
     padding: 3px 1rem;
     border: 0; }
-  /* line 1374, hddt-mobile/libs/style.scss */
+  /* line 1407, hddt-mobile/libs/style.scss */
   #filterModal .modal-body {
     padding: 5px 0; }
-  /* line 1378, hddt-mobile/libs/style.scss */
+  /* line 1411, hddt-mobile/libs/style.scss */
   #filterModal .modal-footer {
     border: 0; }
-  /* line 1382, hddt-mobile/libs/style.scss */
+  /* line 1415, hddt-mobile/libs/style.scss */
   #filterModal form {
     padding: 5px 15px; }
-  /* line 1387, hddt-mobile/libs/style.scss */
+  /* line 1420, hddt-mobile/libs/style.scss */
   #filterModal .group-hd select {
     margin-bottom: 15px; }
 
-/* line 1394, hddt-mobile/libs/style.scss */
+/* line 1427, hddt-mobile/libs/style.scss */
 .cr-modal {
   top: 50px;
   font-size: 14px; }
-  /* line 1398, hddt-mobile/libs/style.scss */
+  /* line 1431, hddt-mobile/libs/style.scss */
   .cr-modal .modal-header {
     padding: 3px 1rem;
     border: 0; }
-  /* line 1403, hddt-mobile/libs/style.scss */
+  /* line 1436, hddt-mobile/libs/style.scss */
   .cr-modal .modal-body {
     padding: 5px 0; }
-  /* line 1407, hddt-mobile/libs/style.scss */
+  /* line 1440, hddt-mobile/libs/style.scss */
   .cr-modal .modal-footer {
     border: 0; }
-  /* line 1411, hddt-mobile/libs/style.scss */
+  /* line 1444, hddt-mobile/libs/style.scss */
   .cr-modal ul {
     margin: 0;
     padding: 0;
     list-style: none; }
-    /* line 1416, hddt-mobile/libs/style.scss */
+    /* line 1449, hddt-mobile/libs/style.scss */
     .cr-modal ul li {
       border-bottom: 1px solid #efefef;
       padding: 5px 15px;
       display: flex;
       flex-wrap: wrap; }
-      /* line 1422, hddt-mobile/libs/style.scss */
+      /* line 1455, hddt-mobile/libs/style.scss */
       .cr-modal ul li label {
         width: 130px; }
-        /* line 1425, hddt-mobile/libs/style.scss */
+        /* line 1458, hddt-mobile/libs/style.scss */
         .cr-modal ul li label.vtop {
           vertical-align: top; }
-      /* line 1431, hddt-mobile/libs/style.scss */
+      /* line 1464, hddt-mobile/libs/style.scss */
       .cr-modal ul li .form-group {
         width: calc(100% - 140px);
         position: relative; }
-        /* line 1435, hddt-mobile/libs/style.scss */
+        /* line 1468, hddt-mobile/libs/style.scss */
         .cr-modal ul li .form-group i {
           position: absolute;
           left: 0;
           top: 1px;
           font-size: 18px; }
-          /* line 1441, hddt-mobile/libs/style.scss */
+          /* line 1474, hddt-mobile/libs/style.scss */
           .cr-modal ul li .form-group i.fa-exclamation-circle {
             color: red; }
-          /* line 1445, hddt-mobile/libs/style.scss */
+          /* line 1478, hddt-mobile/libs/style.scss */
           .cr-modal ul li .form-group i.fa-check-square-o {
             color: forestgreen; }
-      /* line 1451, hddt-mobile/libs/style.scss */
+      /* line 1484, hddt-mobile/libs/style.scss */
       .cr-modal ul li input {
         width: calc(100%);
         border: 0;
         outline: none;
         text-align: right; }
-      /* line 1458, hddt-mobile/libs/style.scss */
+      /* line 1491, hddt-mobile/libs/style.scss */
       .cr-modal ul li textarea {
         width: calc(100%);
         border: 0;
         outline: none;
         text-align: right; }
-      /* line 1465, hddt-mobile/libs/style.scss */
+      /* line 1498, hddt-mobile/libs/style.scss */
       .cr-modal ul li .result-s {
         position: absolute;
         background: #ccc;
@@ -1199,18 +1224,18 @@ header {
         opacity: 0;
         pointer-events: none;
         transition: .2s; }
-        /* line 1476, hddt-mobile/libs/style.scss */
+        /* line 1509, hddt-mobile/libs/style.scss */
         .cr-modal ul li .result-s li {
           text-align: right; }
 
-/* line 1484, hddt-mobile/libs/style.scss */
+/* line 1517, hddt-mobile/libs/style.scss */
 li.mst-ip {
   position: relative; }
-  /* line 1489, hddt-mobile/libs/style.scss */
+  /* line 1522, hddt-mobile/libs/style.scss */
   li.mst-ip .mst-fg {
     padding-right: 40px;
     margin-bottom: 0; }
-  /* line 1494, hddt-mobile/libs/style.scss */
+  /* line 1527, hddt-mobile/libs/style.scss */
   li.mst-ip button {
     position: absolute;
     top: calc(50% + 0px);
@@ -1228,70 +1253,74 @@ li.mst-ip {
     box-shadow: 0 0 2px 0 #ccc;
     cursor: pointer; }
 
-/* line 1513, hddt-mobile/libs/style.scss */
+/* line 1546, hddt-mobile/libs/style.scss */
 .has-error small {
   display: none !important; }
 
-/* line 1517, hddt-mobile/libs/style.scss */
+/* line 1550, hddt-mobile/libs/style.scss */
 .gj-datepicker {
   width: 125px !important; }
 
-/* line 1521, hddt-mobile/libs/style.scss */
+/* line 1554, hddt-mobile/libs/style.scss */
 .gj-icon {
   font-size: 20px !important;
   color: #585858; }
 
-/* line 1526, hddt-mobile/libs/style.scss */
+/* line 1559, hddt-mobile/libs/style.scss */
 .gj-datepicker-bootstrap [role=right-icon] button {
   border: 0;
   width: 28px; }
 
-/* line 1531, hddt-mobile/libs/style.scss */
+/* line 1564, hddt-mobile/libs/style.scss */
 #datepicker {
   border: 0 !important;
   padding: 0 10px 0 0 !important;
   font-size: 14px; }
-  /* line 1536, hddt-mobile/libs/style.scss */
+  /* line 1569, hddt-mobile/libs/style.scss */
   #datepicker::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #000 !important;
     /* Firefox */ }
-  /* line 1542, hddt-mobile/libs/style.scss */
+  /* line 1575, hddt-mobile/libs/style.scss */
   #datepicker:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: #000 !important; }
-  /* line 1547, hddt-mobile/libs/style.scss */
+  /* line 1580, hddt-mobile/libs/style.scss */
   #datepicker::-ms-input-placeholder {
     /* Microsoft Edge */
     color: #000 !important; }
 
-/* line 1553, hddt-mobile/libs/style.scss */
+/* line 1586, hddt-mobile/libs/style.scss */
 .gj-datepicker-bootstrap [role=right-icon] button .gj-icon,
 .gj-datepicker-bootstrap [role=right-icon] button .material-icons {
   top: 2px; }
 
-/* line 1559, hddt-mobile/libs/style.scss */
+/* line 1592, hddt-mobile/libs/style.scss */
 .modal-body .form-group {
   margin-bottom: 0; }
 
-/* line 1563, hddt-mobile/libs/style.scss */
+/* line 1596, hddt-mobile/libs/style.scss */
 .modal-body label {
   margin-bottom: 0; }
 
-/* line 1568, hddt-mobile/libs/style.scss */
+/* line 1602, hddt-mobile/libs/style.scss */
 .modal-body ul li > ul {
   width: 100%;
   background: #e4e4e4; }
 
+/* line 1610, hddt-mobile/libs/style.scss */
+.dropdown-item {
+  font-size: 14px; }
+
 @media screen and (max-width: 768px) {
-  /* line 1577, hddt-mobile/libs/style.scss */
+  /* line 1615, hddt-mobile/libs/style.scss */
   .wrap {
     height: 100vh; }
-  /* line 1581, hddt-mobile/libs/style.scss */
+  /* line 1619, hddt-mobile/libs/style.scss */
   #menu-bar {
     position: fixed;
     bottom: 0; }
-  /* line 1586, hddt-mobile/libs/style.scss */
+  /* line 1624, hddt-mobile/libs/style.scss */
   #menu-bar-option {
     position: fixed;
     bottom: 0; } }
